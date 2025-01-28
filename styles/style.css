@@ -46,11 +46,6 @@
   line-height: 24.3px; /* 135% */
 }
 
-.address-posiotion-right {
-  margin-right: 37px;
-}
-
-
 /* header */
 
 .header {
@@ -77,6 +72,7 @@
 
 .address {
   justify-self: end;
+  padding-right: 37px;
   color: #000;
   font-size: 18px;
   font-style: normal;
