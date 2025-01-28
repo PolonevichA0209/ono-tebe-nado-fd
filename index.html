@@ -16,7 +16,7 @@
   <header class="header">
     <nav class="header-nav nav">
       <ul class="header-nav-list nav-list">
-        <li class="header-nav-item nav-item">
+        <li class="header-nav-item nav-item nav-item-active">
           <a href="#" class="header-nav-link link nav-link-active">главная</a>
         </li>
         <li class="header-nav-item nav-item">
@@ -27,12 +27,14 @@
         </li>
       </ul>
     </nav>
-    <a href="#" class="header-logo logo"><img src="./images/logo-black.svg" alt="Логотип с надписью: 'Оно тебе надо'"
-        class="header-logo-img"></a>
-    <address class="address header-address">
-      <a href="tel:+99995555555" class="link header-address-link">+9 999 555 5555</a>
-      <a href="mailto:info@sobaka.ge" class="link header-address-link">info@sobaka.ge</a>
-      <span class="adress-text header-address-text">наб. Принсенграхт 263-<br>265, Амстердам</span>
+    <a class="header-logo logo">
+      <img src="./images/logo-black.svg" alt="Логотип с надписью: 'Оно тебе надо'" class="header-logo-img">
+    </a>
+    <!-- В adress класс address-posiotion-right использую так как text-align: right почему-то не прижимает до конца текст к правому краю и получается большое не соответствие с pixel perfect -->
+    <address class="address address-posiotion-right">
+      <a href="tel:+99995555555" class="link address-link">+9 999 555 5555</a>
+      <a href="mailto:info@sobaka.ge" class="link address-link">info@sobaka.ge</a>
+      <p class="adress-text">наб. Принсенграхт 263-<br>265, Амстердам</p>
     </address>
   </header>
 
@@ -44,8 +46,8 @@
           class="aligned-text aligned-text_center">тебе</span><span class="aligned-text aligned-text_right">надо</span>
       </h1>
       <div class="description cover-description">
-        <p class="cover-description-text">Аукцион вещей, вкоторые никто не верил</p>
-        <button class="cover-description-btn btn">Сделать ставку</button>
+        <p class="cover-description-text">Аукцион вещей, в которые никто не верил</p>
+        <button class="cover-description-btn btn" type="button">Сделать ставку</button>
       </div>
     </section>
 
@@ -119,10 +121,10 @@
   </main>
 
   <footer class="footer">
-    <address class="address footer-address">
-      <a href="tel:+99995555555" class="link footer-address-link">+9 999 555 5555</a>
-      <a href="mailto:info@sobaka.ge" class="link footer-address-link">info@sobaka.ge</a>
-      <span class="adress-text footer-address-text">наб. Принсенграхт 263-<br>265, Амстердам</span>
+    <address class="address">
+      <a href="tel:+99995555555" class="link address-link">+9 999 555 5555</a>
+      <a href="mailto:info@sobaka.ge" class="link address-link">info@sobaka.ge</a>
+      <p class="adress-text">наб. Принсенграхт 263-265, Амстердам</p>
     </address>
     <nav class="footer-nav nav">
       <ul class="footer-nav-list nav-list">
@@ -139,17 +141,17 @@
     </nav>
     <ul class="footer-social-list social-list">
       <li class="footer-social-item">
-        <a href="#" class="footer-social-link">
+        <a href="https://www.youtube.com/" class="footer-social-link" target="_blank">
           <img src="./images/yt.svg" alt="youtube логотип" class="footer-social-img">
         </a>
       </li>
       <li class="footer-social-item">
-        <a href="#" class="footer-social-link">
+        <a href="https://vk.com/" class="footer-social-link" target="_blank">
           <img src="./images/vk.svg" alt="Vkontakte логотип" class="footer-social-img">
         </a>
       </li>
       <li class="footer-social-item">
-        <a href="#" class="footer-social-link">
+        <a href="https://www.pinterest.com/" class="footer-social-link" target="_blank">
           <img src="./images/pinterest.svg" alt="Pinterest логотип" class="footer-social-img">
         </a>
       </li>

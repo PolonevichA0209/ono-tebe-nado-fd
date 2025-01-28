@@ -37,41 +37,43 @@
   text-decoration: none;
 }
 
+.nav-item-active {
+  list-style: none;
+}
+
+.address-link {
+  display: block;
+  line-height: 24.3px; /* 135% */
+}
+
+.address-posiotion-right {
+  margin-right: 37px;
+}
+
+
 /* header */
 
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   align-items: center;
-  padding: 92px 50px 96px 50px;
+  padding: 92px 50px 97px 50px;
   background-color: rgb(255, 255,255);
 }
 
 .header-nav-list {
   display: flex;
   column-gap: 33px;
+  list-style: circle;
 }
 
 .header-nav-item {
   position: relative;
 }
 
-.header-nav-item::after {
-  content: '';
-  position: absolute;
-  top: 9px;
-  right: -19px;
-  display: block;
-  width: 6px;
-  height: 6px;
-  border: 1px solid black;
-  border-radius: 50%;
+.header-logo-img {
+  height: 105px;
 }
-
-.header-nav-item:last-child::after {
-  display: none;
-}
-
 
 .address {
   justify-self: end;
@@ -81,21 +83,12 @@
   line-height: 24.3px; /* 135% */
 }
 
-.header-address {
-  margin-right: 34px;
-}
-
-.header-address-link {
-  display: block;
-  line-height: 24.3px; /* 135% */
-}
-
 /* Cover */
 
 .cover {
   position: relative;
   min-height: 757px;
-  margin-bottom: 180px;
+  margin-bottom: 179px;
   padding: 165px 50px 50px 50px;
   background: url('../images/cover.jpg') center center/cover no-repeat;
 }
@@ -103,24 +96,28 @@
 .cover-title {
   position: relative;
   z-index: 2;
-  margin-bottom: 106px;
+  margin-bottom: 105px;
   color: rgb(255, 255,255);
   font-weight: 700;
   font-size: 100px;
   line-height: 115%; /* 115px */
-  letter-spacing: 28px;
+  letter-spacing: 30px;
   text-transform: uppercase;
 }
 
 .aligned-text {
   display: block;
+  margin-bottom: 20px;
 }
 
 .aligned-text_center {
+  margin-bottom: 20px;
+  margin-left: 30px;
   text-align: center;
 }
 
 .aligned-text_right {
+  margin-right: -30px;
   text-align: right;
 }
 
@@ -133,12 +130,12 @@
 }
 
 .cover-description-text {
-  max-width: 637px;
+  max-width: 640px;
   color: rgb(255, 255,255);
   font-size: 22px;
   line-height: 28px; /* 127.273% */
   text-transform: uppercase;
-  word-spacing: 23px;
+  word-spacing: 18px;
 }
 
 .cover-description-btn {
@@ -149,11 +146,13 @@
   font-size: 22px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 /* Lots */
 
 .lots {
+  margin-bottom: 154px;
   padding: 0 24px;
 }
 
@@ -164,6 +163,7 @@
 
 .lots-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
 }
@@ -223,7 +223,6 @@
 
 .lots-link-more {
   display: block;
-  margin-bottom: 155px;
   margin-left: 40px;
   font-size: 20px;
 }
@@ -268,6 +267,7 @@
 
 .about-content-text {
   margin-bottom: 24px;
+  padding-right: 5px;
   color: rgb(0, 0, 0);
   font-size: 20px;
   line-height: 24px; /* 120% */
@@ -285,13 +285,8 @@
   padding: 0 50px 82px 50px;
 }
 
-.footer-address {
+.footer-address-possition {
   justify-self: start;
-}
-
-.footer-address-link {
-  display: block;
-  line-height: 24.3px; /* 135% */
 }
 
 .footer-nav {
