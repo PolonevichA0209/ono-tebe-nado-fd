@@ -11,6 +11,7 @@
 .logo {
   display: block;
   max-width: 148px;
+  max-height: 105px;
 }
 
 .title {
@@ -80,6 +81,10 @@
   line-height: 24.3px; /* 135% */
 }
 
+.header-address{
+  margin-right: 34px;
+}
+
 .header-address-link {
   display: block;
   line-height: 24.3px; /* 135% */
@@ -89,6 +94,7 @@
 
 .cover {
   position: relative;
+  min-height: 757px;
   margin-bottom: 180px;
   padding: 165px 50px 50px 50px;
   background: url('../images/cover.jpg') center center/cover no-repeat;
@@ -250,6 +256,10 @@
 
 .about-logo-img {
   width: 100%;
+}
+
+.about-content{
+  padding-top: 101px;
 }
 
 .about-content-title {
