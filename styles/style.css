@@ -67,7 +67,7 @@
   border-radius: 50%;
 }
 
-.header-nav-item:last-child::after{
+.header-nav-item:last-child::after {
   display: none;
 }
 
@@ -80,7 +80,7 @@
   line-height: 24.3px; /* 135% */
 }
 
-.header-address-link{
+.header-address-link {
   display: block;
   line-height: 24.3px; /* 135% */
 }
@@ -89,7 +89,6 @@
 
 .cover {
   position: relative;
-  min-height: 757px;
   margin-bottom: 180px;
   padding: 165px 50px 50px 50px;
   background: url('../images/cover.jpg') center center/cover no-repeat;
@@ -152,7 +151,7 @@
   padding: 0 24px;
 }
 
-.lots-title{
+.lots-title {
   margin-bottom: 27px;
   margin-left: 40px;
 }
